@@ -1,0 +1,30 @@
+<!-- 13. interpolate city variable value {{city}} -->
+<h2>Forecast for {{city}}, {{state}}</h2>
+<hr></hr>
+<!--create repeated result list with ng-repeat  -->
+<div class="row ">
+<div ng-repeat="day in weatherResult">
+
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-info">
+                    <h5 class="panel-title">{{day.date.pretty}}</h3>
+
+                </div>
+                <div class="panel-body">
+                    <h6><img ng-src="{{day.icon_url}}">Conditions: {{day.conditions}}</h6>
+
+                    <p>High:  {{day.high.fahrenheit}} and Low:  {{day.low.fahrenheit}}</p>
+                    <p>Average Wind: {{day.avewind.mph}}, Direction: {{day.avewind.dir}}</p>
+                    <p>Average Humidity: {{day.avehumidity}}</p>
+                    <p>Snow: {{day.snow_allday.in}}  inches</p>
+                </div>
+            </div>
+
+    </div>
+        </div>
+        <div >
+            <h6 class="col-sm-3">Weather Data Provided by: <span class="badge badge-secondary"><img class="img-fuid img-thumbnail" src="img/wu-logo-s.png"></span></h6>
+
+        </div>
+</div>
