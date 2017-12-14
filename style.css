@@ -11,3 +11,7 @@
 
     background-color: rgba( 228, 215, 196, 0.5)!important;
 }
+
+.navbar {
+    margin-bottom: 0 !important;
+}

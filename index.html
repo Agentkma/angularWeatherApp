@@ -49,23 +49,32 @@
 <body>
 
     <header>
+
         <nav role="navigation" class="navbar navbar-default">
             <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="/">WeatherNow</a>
-                </div>
+                <!-- <div class="row"> -->
+                    <div class="col-sm-12 col-md-10 col-md-offset-1">
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-                </ul>
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="/">WeatherNow</a>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                        </ul>
+                    </div>
+
+                <!-- </div> -->
             </div>
         </nav>
+
     </header>
     <main class="main"role="main">
         <div class="container">
-            <!--7. add ng-view attribute to link routes to index.html  -->
-            <div ng-view></div>
 
+                <!--7. add ng-view attribute to link routes to index.html  -->
+                <div  ng-view></div>
+            
         </div>
     </main>
     <footer role="contentinfo">
